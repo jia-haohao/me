@@ -1,4 +1,4 @@
-const hasStudentCard = false; // 定数にfalseを代入
+const hasStudentCard = true; // 定数にfalseを代入
 
 if (hasStudentCard === true) { // もし学生証を持って入れば
 	console.log("学割適用"); // 条件に合わないので出力されない
