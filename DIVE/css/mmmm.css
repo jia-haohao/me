@@ -88,46 +88,42 @@ li{
 }
 
 form{
-    width: 670px;
+    width: 100%;
     line-height: 3.5;
 }
 
-.company tr{
-  height: 7rem; 
-}
-.company th{
+th{
+    height: 7rem; 
     width: 150px;
     font-size: 18px;
     text-align: right;
-    margin-right: 10px;
 }
-.company td{
-    padding:10px;
+td{
+    padding:px;
+    height: 7rem; 
     width: 480px;
-    display: block;
+    padding-left: 10px;
 }
-.company .text{
+.text{
     width: 480px;
 }
-.company textarea{
+textarea{
     width: 480px;
     display: block;
 }
 
-.btn-area{
+.submit{
     text-align: center;
     color: white;
-    padding: 10px;
-  }
-  
-  input[type="submit"]{
+}
+.button{
     background: #008b8b;
     border: none;
     color: white;
     font-size:3rem;
+    padding: 10px;
   }
-  
-  input[type="submit"]:hover{
+.button:hover{
     opacity: 0.4;
   }
   
