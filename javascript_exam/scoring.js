@@ -9,7 +9,7 @@ $(document).ready(function () {
     Number($('#science').val()),
     Number($('#society').val())
     ];
-    // 変数「sum」に「国語、英語、数学、理科、社会」の点数を足します。
+    // 変数「sum」に「国語、英語、数学、理科、社会」のr点数を足します。
     let sum = subject_points[0];
     sum = sum + subject_points[1];
     sum = sum + subject_points[2];
@@ -31,6 +31,12 @@ $(document).ready(function () {
     // もし「averageIndicate」が80以上なら"A"を返します。
     if (averageIndicate >= 80) {
       return "A";
+    }else if(averageIndicate >= 60){
+      return "B";
+    }else if(averageIndicate >= 40){
+      return "C";
+    }else{
+      return "D";
     }
     // もし「averageIndicate」が60以上なら"B"を返します。
     // もし「averageIndicate」が40以上なら"C"を返します。
@@ -48,6 +54,12 @@ $(document).ready(function () {
     let number = subject_points.length;
     // 変数「judge」に"合格"を代入しておきます。
     let judge = "合格";
+    for(let i = 0; i < number; i++){
+      if(subject_points[i] < 60){
+        judge = "不合格";
+        break;
+      }
+    }
     // 入力したそれぞれの教科のうち、1つでも60点よりも低い点数があった場合、変数「judge」に"不合格"を再代入する処理を記述する。
     // ヒント：配列の繰り返し処理について調べてみましょう。
     return judge;
