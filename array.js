@@ -12,3 +12,4 @@ let names = ["noro", "nakao", "matsumoto"];
 let numbers = [10, 20, 30];
 // 文字列と数字を混合して保持。
 let name_number = ["noro", 10, "nakao", 20];
+console.log(name_number)
